@@ -1,0 +1,209 @@
+.body {
+  margin: 0;
+  position: relative;
+  width: 1120px;
+  height: 535px;
+  background: #FFFFFF;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1B1C21;
+ }  
+
+ /*верхнее меню с иконками*/
+
+.menu {
+  position: relative;
+  height: 87px;
+  width: auto;
+}
+
+.menu--border {
+  border-bottom: 1px solid #D9FFF5;
+  padding: 0px 8px;
+}
+
+.menu__row {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__column {
+  align-self: center;
+  display: flex;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #FF3E79;
+  position: relative;
+  display: flex;
+}
+
+.divider--position770-1 {
+  margin: 0 4px;
+}
+
+.logo {
+  margin: 0px 250px 0px 0.73px;
+}
+
+.divider {
+width: 2px;
+height: 32px;
+background-color: #EAEAEA;
+border-radius: 1px;
+}
+
+.divider--position1 {
+  margin: 0 4px;
+}
+
+.icon-circle__img {
+  margin: auto;
+}
+
+.menu__column--position {
+  display: flex;
+}
+
+/*основной блок страницы*/
+
+.about {
+  position: relative;
+  height: 448px;
+  background: #F8F8F8;
+  border-top: 1px solid #F8F8F8;
+}
+
+/*заголовок*/
+
+.about__title {
+  margin: 24px auto;
+  padding-left: 32px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  position: relative;
+  font-weight: 900px;
+  }
+
+  .title::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #41F6D7;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*меню по сайту*/
+
+.about__slide-menu-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*ремонтируемые бренды*/
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px; 
+}
+
+.about__button {
+  margin: 0px 19px 0px 32px;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  height: 40px;
+  width: 248px;
+  background: #FFFFFF;
+  color: #7E7E82;
+}
+
+/*гипперссылки на страницы сайта*/
+
+.about__slide-menu {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 30px;
+  align-self: center;
+}
+
+.about__slide-menu--position1120 {
+  margin: 14.36px 0px 19.22px 56px;
+}
+
+/*информация о фирме*/
+
+.about__info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about__info-column {
+  align-self: top;
+}
+
+/*информация о фирме - текст*/
+
+.about__text {
+  letter-spacing: 0.2px;
+  margin: -20px 0px -20px 0px;
+  height: 160px;
+  width: 490px;
+}
+
+/*информация о фирме - стрелки, читать далее*/
+
+.arrow {
+  background-color: #F8F8F8;
+  stroke: #41F6D7;
+  stroke-width: 1.5px;
+  width: 8px;
+  height: 11px;
+}
+
+.about__button-grey {
+  color: #1B1C21;
+  background-color: #F8F8F8;
+}
+
+.about__button-arrow {
+  bottom: 0px;
+  margin: 16px 16px 8px 16px;
+  height: 11px;
+  width: 5px;
+  background-color: #F8F8F8;
+}
+
+/*информация о фирме - картинка*/
+
+.about__info-column--img {
+  border-radius: 6px;
+  width: 531px;
+  margin-top: -40px;
+
+}
+
+
+ 
