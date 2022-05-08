@@ -1,8 +1,8 @@
 .body {
   margin: 0;
   position: relative;
-  width: 1120px;
-  height: 535px;
+  width: 100vw;
+  height: auto;
   background: #FFFFFF;
   font-family: "TT Lakes", "Arial", sans-serif;
   font-size: 14px;
@@ -15,23 +15,23 @@
 .menu {
   position: relative;
   height: 87px;
-  width: auto;
+  width: 100vw;
 }
 
 .menu--border {
   border-bottom: 1px solid #D9FFF5;
-  padding: 0px 8px;
 }
 
 .menu__row {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .menu__column {
   align-self: center;
   display: flex;
+  padding-right: 16px;
 }
 
 .icon-circle {
@@ -43,12 +43,12 @@
   display: flex;
 }
 
-.divider--position770-1 {
-  margin: 0 4px;
+.icon-circle__position {
+  margin-left: 16px;
 }
 
-.logo {
-  margin: 0px 250px 0px 0.73px;
+.divider--visibility {
+  display: initial;
 }
 
 .divider {
@@ -58,33 +58,28 @@ background-color: #EAEAEA;
 border-radius: 1px;
 }
 
-.divider--position1 {
-  margin: 0 4px;
+.divider__position {
+  margin-right: 4px;
 }
 
 .icon-circle__img {
   margin: auto;
 }
 
-.menu__column--position {
-  display: flex;
-}
-
 /*основной блок страницы*/
 
 .about {
   position: relative;
-  height: 448px;
+  height: 100vh;
   background: #F8F8F8;
   border-top: 1px solid #F8F8F8;
 }
 
-/*заголовок*/
-
-.about__title {
-  margin: 24px auto;
-  padding-left: 32px;
+.about__indent {
+  padding: 24px 3vw 0 3vw;
 }
+
+/*заголовок*/
 
 .title {
   font-size: 28px;
@@ -102,7 +97,7 @@ border-radius: 1px;
     height: 40px;
     border-radius: 0px 6px 6px 0px;
     background-color: #41F6D7;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px -3vw;
   }
 
   /*меню по сайту*/
@@ -110,6 +105,7 @@ border-radius: 1px;
 .about__slide-menu-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*ремонтируемые бренды*/
@@ -126,7 +122,7 @@ border-radius: 1px;
 }
 
 .about__button {
-  margin: 0px 19px 0px 32px;
+  margin: 0px 19px 0px 0px;
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   height: 40px;
@@ -149,19 +145,25 @@ border-radius: 1px;
 }
 
 .about__slide-menu--position1120 {
-  margin: 14.36px 0px 19.22px 56px;
+  position: relative;
+  margin: 14.36px 0px 19.22px 0px;
 }
 
 /*информация о фирме*/
 
 .about__info-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap; 
 }
 
 .about__info-column {
-  align-self: top;
+  align-self: flex-start;
+}
+
+.about__info-column:last-child {
+  flex-grow: 1;
+  justify-items: flex-end;
+  margin-left: 36px;
 }
 
 /*информация о фирме - текст*/
@@ -190,7 +192,7 @@ border-radius: 1px;
 
 .about__button-arrow {
   bottom: 0px;
-  margin: 16px 16px 8px 16px;
+  margin: 16px 16px 8px 1vw;
   height: 11px;
   width: 5px;
   background-color: #F8F8F8;
@@ -200,9 +202,8 @@ border-radius: 1px;
 
 .about__info-column--img {
   border-radius: 6px;
-  width: 531px;
-  margin-top: -40px;
-
+  min-width: 531px;
+  width: 100%;
 }
 
 
