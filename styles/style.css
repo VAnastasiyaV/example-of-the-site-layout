@@ -1,0 +1,337 @@
+@font-face {
+  font-family: TT Lakes;
+  src: url('../Fonts/TTLakes-Medium.eot');
+  src: url('../Fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/TTLakes-Medium.woff') format('woff'),
+       url('../Fonts/TTLakes-Medium.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: TT Lakes;
+  src: url('../Fonts/TTLakes-DemiBold.eot');
+  src: url('../Fonts/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/TTLakes-DemiBold.woff') format('woff'),
+       url('../Fonts/TTLakes-DemiBold.ttf') format('truetype');
+       font-weight: 700;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: TT Lakes;
+  src: url('../Fonts/TTLakes-ExtraBold.eot');
+  src: url('../Fonts/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/TTLakes-ExtraBold.woff') format('woff'),
+       url('../Fonts/TTLakes-ExtraBold.ttf') format('truetype');
+       font-weight: 900;
+       font-style: normal;
+}
+
+.body {
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background: #FFFFFF;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1B1C21;
+ }  
+
+ /*верхнее меню с иконками*/
+
+.menu {
+  position: relative;
+  height: 87px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu--border {
+  border-bottom: 1px solid #D9FFF5;
+}
+
+.menu__column {
+  align-self: center;
+  display: flex;
+  padding-right: 16px;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: TT Lakes;
+  position: relative;
+}
+
+.button:hover {
+  -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.button:focus {
+  -webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+       -o-transition: 0.2s;
+          transition: 0.2s;
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #757474;
+  font-weight: bold;
+}
+
+.button--position {
+  display: none;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #FF3E79;
+  position: relative;
+  display: flex;
+}
+
+.icon-circle__position {
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .button--position {
+    display: flex;
+  }
+}
+
+.menu::before,
+.menu::after {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  border-radius: 1px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+}
+
+.menu::after {
+  display: none;
+}
+
+.menu::before {
+  left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu::after {
+    display: block;
+    left: 100%; 
+  margin-left: -132px;
+  }
+
+  .menu::before {
+    left: 76px;
+  }
+
+  .button__position-divider {
+    margin-right: 24px;
+  }
+  
+}
+
+.icon-circle__img {
+  margin: auto;
+}
+
+/*основной блок страницы*/
+
+.about {
+  position: relative;
+  height: 100vh;
+  background: #F8F8F8;
+  border-top: 1px solid #F8F8F8;
+}
+
+.about__indent {
+  padding: 24px 3vw 0 3vw;
+}
+
+/*заголовок*/
+
+.title {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  position: relative;
+  font-weight: 900;
+  }
+
+  .title::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #41F6D7;
+    margin: 0px 0px 0px -3vw;
+  }
+
+  /*меню по сайту*/
+
+.about__slide-menu-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about__slide-menu-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/*ремонтируемые бренды*/
+
+.button--blue {
+  margin: 0px 19px 0px 0px;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  height: 40px;
+  width: 248px;
+  background: #FFFFFF;
+  color: #7E7E82;
+}
+
+/*гипперссылки на страницы сайта*/
+
+.about__slide-menu {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 30px;
+  align-self: center;
+}
+
+.about__slide-menu--position1120 {
+  position: relative;
+  margin: 14.36px 0px 19.22px 0px;
+}
+
+/*информация о фирме*/
+
+.about__info-row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+@media screen and (min-width: 768px) {
+  .about__info-row {
+    flex-wrap: nowrap; 
+  }
+}
+
+.about__info-column {
+  align-self: flex-start;
+}
+
+.about__info-column:last-child {
+  flex-grow: 1;
+  justify-items: flex-end;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+.about__info-column:last-child {
+  margin-left: 36px;
+  margin-top: 0px;
+}
+}
+
+/*информация о фирме - текст*/
+
+.about__text {
+  letter-spacing: 0.2px;
+  margin: 0px 16px 8px 0px;
+  height: 90px;
+  width: 100vw;
+  padding-right: 5px;
+}
+
+.about__text--320 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text {
+    margin: 0px 0px -20px 0px;
+    height: 160px;
+    width: 490px;
+  }
+  .about__text--320 {
+    display: inline-block;
+  }
+}
+
+/*информация о фирме - стрелки, читать далее*/
+
+.arrow {
+  background-color: #F8F8F8;
+  stroke: #41F6D7;
+  stroke-width: 1.5px;
+  width: 8px;
+  height: 11px;
+}
+
+.button--grey {
+  color: #1B1C21;
+  background-color: #F8F8F8;
+  font-family: TT Lakes;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+ 
+}
+
+.button__arrow {
+  bottom: 0px;
+  margin: 16px 16px 8px 1vw;
+  height: 11px;
+  width: 5px;
+  background-color: #F8F8F8;
+}
+
+/*информация о фирме - картинка*/
+
+.about__img {
+  border-radius: 6px;
+  width: 100%;
+} 
