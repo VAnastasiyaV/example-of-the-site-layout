@@ -6,111 +6,116 @@
     <meta name="keywords" content="ремонт техники, Dell, CPS">
     <meta name="description" content="Авторизированный сервисный центр по ремонту техники Dell CPS">    
     <title>Сервисный центр по ремонту техники Dell CPS</title>
-    <link rel="stylesheet" href="styles/styleMobile320.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style type="text/css">
+      .menu::after,
+      .menu::before {
+        display: none; 
+      }
+     .menu {
+        visibility: visible;
+        margin: 0px;
+      } 
+    </style>
+    
    </head>
 
-  <body class="body">
+  <body class="body body__mobile320">
 
-    <header class="menu menu--border">
+    <header class="menu menu__indent-mobile320">
 
-      <nav class="menu__column">
-        <button type="button" class="button menu-page__item">
-          <div class="icon-circle">
-            <div class="icon-circle__close">
+      <div class="menu__column">
+        <button type="button" class="button-circle button-circle--decoration">
+            <div class="button-circle__close">
             </div>
-          </div>
         </button>
-      </nav>
 
-      <div class="menu__column menu__column--position">
         <img src="img/logo.svg" alt="logotip">
         </img>
       </div>
 
-      <nav class="menu__column">
-        <button type="button" class="button menu-page__item">
-          <div class="icon-circle">
-            <img src="img/search.svg" alt="search" 
-            class="icon-circle__img">
-            </img> 
-          </div>
+      <div class="menu__column">
+        <button type="button" class="button-circle button-circle--decoration">
+          <img src="img/search.svg" alt="search" class="button-circle__img">
+          </img> 
         </button> 
-      </nav>
+      </div>
   
     </header>
 
-    <main>
-      <ul class="menu-page menu-page__size">
-        <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Ремонт техники</a>
+    <nav class="menu-page menu-page__mobile320">
+      <ul class="menu-page__list">
+        <li class="menu-page__item menu-page__item-active">
+          <a href="#" class="menu-page__item--decoration">Ремонт техники</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Услуги и сервисы</a>
+          <a href="#" class="menu-page__item--decoration">Услуги и сервисы</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Корпоративным клиентам</a>
+          <a href="#" class="menu-page__item--decoration">Корпоративным клиентам</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Продавцам техники</a>
+          <a href="#" class="menu-page__item--decoration">Продавцам техники</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Партнерам</a>
+          <a href="#" class="menu-page__item--decoration">Партнерам</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Производителям</a>
+          <a href="#" class="menu-page__item--decoration">Производителям</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Наши сервисные центры</a>
+          <a href="#" class="menu-page__item--decoration">Наши сервисные центры</a>
         </li>
         <li class="menu-page__item">
-          <a href="#" class="menu-page__item menu-page__item--none-decor">Контакты</a>
+          <a href="#" class="menu-page__item--decoration">Контакты</a>
         </li>
       </ul>
-    </main>
+    </nav>
 
-    <footer>
-      <nav class="body-nav">
-        <ul class="menu-page menu__row">
-          <li class="menu__column">
-            <button type="button" class="button menu-page__item">
-              <div class="icon-circle">
-                <img src="img/phone.svg" alt="phone" 
-                class="icon-circle__img">
-                </img>
-              </div>
-            </button>
-          </li>   
-          <li class="menu__column">
-            <button type="button" class="button menu-page__item">
-              <div class="icon-circle">
-                <div class="icon-circle__message icon-circle__img">
-                  <div class="icon-circle__message-tail">
-                  </div>
-                </div>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="button menu-page__item">
-              <div class="icon-circle">
-                <img src="img/person.svg" alt="" 
-                class="icon-circle__img">
-                </img>
-              </div>
-            </button>  
-          </li>   
-        </ul>
-      </nav> 
+    <footer class="menu__indent-mobile320">
+
+      <div class="menu__column">
+      <button type="button" class="button-circle button-circle--decoration">
+        <img src="img/phone.svg" alt="phone" class="button-circle__img"></img>
+      </button> 
+
+      <button type="button" class="button-circle button-circle--decoration">
+        <svg width="20px" height="20px" class="button-circle__img">
+         <g>
+            <symbol id="icon-message">
+              <title>message</title>
+              <desc>White icon  message</desc>   
+                <rect x="0" y="0"
+                width="20" height="15"
+                rx="2" ry="2" fill="#FFFFFF" stroke="#FFFFFF" />
+                <path fill="#FFFFFF" d="M0 13 L0 20  L4 15 Z"/>
+                <rect x="4" y="4"
+                width="12" height="2"
+                rx="2" ry="2" fill="#FF3E79"/>
+                <rect x="4" y="9"
+                width="8" height="2"
+                rx="2" ry="2" fill="#FF3E79"/>
+            </symbol>
+            <use xlink:href="#icon-message" x="0" y="0"/>
+          </g>
+        </svg>
+      </button>   
+
+      <button type="button" class="button-circle button-circle--decoration">
+        <img src="img/person.svg" alt="contacts" class="button-circle__img"></img>
+      </button> 
+
+      </div>
 
       <address>
-        <p><a href="#" class="menu-page__item--none-decor menu-page__item">mail@cps.com</a></p>
-        <p class="menu-page__item--none-decor menu-page__item--bold">8 800 890 8900</p>
+        <p><a href="#" class="menu-page__item--decoration">mail@cps.com</a></p>
+        <p class="menu-page__item menu-page__item--bold">8 800 890 8900</p>
       </address>
 
-      <div class="menu-page menu__row menu-page__lang"></divclass> 
-        <input type="button" value="RU" class="button menu-page__item">
-        <input type="button" value="EN" class="button menu-page__item">
-        <input type="button" value="CH" class="button menu-page__item">
+      <div class="menu__column  menu-page__item">
+        <button type="button" class="button button-circle--decoration button__lang button--active">RU</button>
+        <button type="button" class="button button-circle--decoration button__lang">EN</button>
+        <button type="button" class="button button-circle--decoration button__lang">CH</button>
       </div>
 
     </footer>

@@ -11,32 +11,26 @@
 
   <body class="body">
 
-    <header class="menu menu--border">
+    <header class="menu menu__indent menu--border">
 
-      <nav class="menu__column">
+      <div class="menu__column">
 
-        <button type="button" class="button  button__position-divider">
-          <div class="icon-circle icon-circle__position">
-            <img src="img/burger.svg" alt="burger-menu" class="icon-circle__img"></img>
-          </div> 
+        <button type="button" class="button-circle button-circle--decoration">
+            <img src="img/burger.svg" alt="burger-menu" class="button-circle__img"></img>
         </button> 
 
-        <div class="icon-circle__position">
-          <img src="img/logo.svg" alt="logotip"></img>
-        </div>
-      </nav>
+          <img src="img/logo.svg" alt="logotip" class="menu__divider-position"></img>
+        
+      </div>
 
-      <nav class="menu__column">
-          
-        <button type="button" class="button button--position">
-          <div class="icon-circle icon-circle__position">
-            <img src="img/phone.svg" alt="phone" class="icon-circle__img"></img>
-          </div> 
+      <div class="menu__column">
+        
+        <button type="button" class="button-circle button-circle--decoration button-circle--position">
+          <img src="img/phone.svg" alt="phone" class="button-circle__img"></img>
         </button> 
 
-        <button type="button" class="button button--position">
-          <div class="icon-circle icon-circle__position">
-            <svg width="20px" height="20px" class="icon-circle__img">
+        <button type="button" class="button-circle button-circle--decoration button-circle--position">
+            <svg width="20px" height="20px" class="button-circle__img">
              <g>
                 <symbol id="icon-message">
                   <title>message</title>
@@ -55,41 +49,45 @@
                 <use xlink:href="#icon-message" x="0" y="0"/>
               </g>
             </svg>
-          </div> 
         </button>   
 
-        <button type="button" class="button button__position-divider  button--position">
-          <div class="icon-circle icon-circle__position">
-            <img src="img/person.svg" alt="contacts" class="icon-circle__img"></img>
-          </div> 
+        <button type="button" class="button-circle button-circle--decoration button-circle--position">
+            <img src="img/person.svg" alt="contacts" class="button-circle__img"></img>
         </button> 
 
-        <button type="button" class="button">
-          <div class="icon-circle icon-circle__position">
-            <img src="img/repair.svg" alt="repair" class="icon-circle__img"></img>
-          </div> 
+        <div class="menu__1120"> 
+        <button type="button" class="button button--grey button-circle--decoration menu__1120--position">
+          <span>Оставить заявку</span>
         </button> 
 
-        <button type="button" class="button">
-          <div class="icon-circle icon-circle__position">
-            <img src="img/checkstatus.svg" alt="checkstatus" class="icon-circle__img"></img>
-          </div> 
+        <button type="button" class="button-circle button-circle--decoration menu__divider-position">
+            <img src="img/repair.svg" alt="repair" class="button-circle__img"></img>
         </button> 
-         
-      </nav>
+
+        <button type="button" class="button button--grey button-circle--decoration menu__1120--position">
+          <span>Статус ремонта</span> 
+        </button> 
+
+        <button type="button" class="button-circle button-circle--decoration">
+            <img src="img/checkstatus.svg" alt="checkstatus" class="button-circle__img"></img>
+        </button> 
+        </div>
+      </div>
 
     </header>
 
     <main class="about about__indent">
-      <h1 class="title">Услуги и сервисы</h1>
-
-      <nav class="about__slide-menu-row">
-        <input type="button" value="Ремонтируемые устройства" class="button button--blue ">
-        <a href="Mobile menu.html" class="about__slide-menu">Дополнительные услуги</a>
-        <a href="#" class="about__slide-menu">Цены на услуги</a>
-        <a href="#" class="about__slide-menu">Специальные цены</a>
-        <a href="#" class="about__slide-menu">Адреса сервисных центров</a>
-        <a href="#" class="about__slide-menu about__slide-menu--position1120">Отзывы</a>
+      <h1 class="title-menu title-menu__active">Услуги и сервисы</h1>      
+      
+      <nav>
+        <ul  class="about__menu-row">
+          <li><a href="#" class="about__menu-item about__menu-active"> Ремонтируемые устройства</a></li>
+          <li><a href="Mobile menu.html" class="about__menu-item">Дополнительные услуги</a></li>
+          <li><a href="#" class="about__menu-item">Цены на услуги</a></li>
+          <li><a href="#" class="about__menu-item">Специальные цены</a></li>
+          <li><a href="#" class="about__menu-item">Адреса сервисных центров</a></li>
+          <li><a href="#" class="about__menu-item">Отзывы</a></li>
+      </ul>
       </nav>
 
       <div class="about__info-row">
@@ -101,15 +99,15 @@
               Только у нас вы можете отремонтировать свой 
               ноутбук Dell с официальной гарантией 
               производителя.</p>
-            <p class="about__text--320">Мы успешно работаем с 1992 года и 
+            <p>Мы успешно работаем с 1992 года и 
              заслужили репутацию надежного партнера, что подтверждает большое количество 
               постоянных клиентов. Мы гордимся тем, что к нам обращаются 
               по рекомендациям и, в свою очередь, советуют нас родным
               и близким</p>
           </article>
 
-          <button type="button" class="button  button__arrow">
-            <svg class="arrow about__arrow">
+          <button type="button" class="button button--grey  button-circle--decoration">
+            <svg class="arrow">
               <g>
                 <symbol id="arrow">
                   <title>Two arrows down directed</title>
@@ -121,13 +119,14 @@
               </g>
             </svg>
           </button>
-          <input type="button" value="Читать далее" class="button button--grey">
-        
+         
+          <button type="button" class="button button--grey button-grey__position button-circle--decoration">
+            Читать далее
+          </button> 
         </div>
 
-        <div class="about__info-column">
-          <img src="img/info-img.jpg" alt="" class="about__img"></img>
-        </div>
+        <img src="img/info-img.jpg" alt="" class="about__info-column about__img"></img>
+        
       </div>
     </main>    
   </body>
