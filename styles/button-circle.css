@@ -1,0 +1,62 @@
+.button-circle {
+  margin-right: 16px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #FF3E79;
+  position: relative;
+  display: flex;
+  align-self: center;
+}
+
+.button-circle--decoration:hover {
+  transition: 0.5s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.button-circle--decoration:focus {
+  transition: 0.2s;
+  transform: scale(1.1);
+  color: #757474;
+  font-weight: bold;
+}
+
+.button-circle--visibility {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button-circle--visibility {
+    display: flex;
+  }
+}
+
+.button-circle__img {
+  margin: auto;
+}
+
+.button-circle__close::before,
+.button-circle__close::after {
+  position: absolute;
+  align-self: center;
+  content: "";
+  width: 10.87px;
+  height: 10.87px;
+  border-top: 2.17px solid rgb(255, 255, 255);
+  border-left: 2.17px solid rgb(255, 255, 255);
+  left: 20px;
+}
+
+.button-circle__close::before {
+  top: 21.09px;
+  transform-origin: 0% 0%;
+  transform: rotate(225deg);
+}
+
+.button-circle__close::after {
+  top: 18.91px;
+  transform-origin: 0% 0%;
+  transform: rotate(45deg);
+}

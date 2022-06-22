@@ -1,0 +1,36 @@
+.header {
+  height: 80px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #D9FFF5;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  color: #7E7E82;
+}
+
+.header__title {
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 56px;
+  }
+
+  .header__title {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .header__title {
+    padding-left: 32px;
+  }
+}

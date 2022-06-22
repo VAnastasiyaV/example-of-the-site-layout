@@ -1,133 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="ремонт техники, Dell, CPS">
-    <meta name="description" content="Авторизированный сервисный центр по ремонту техники Dell CPS">    
-    <title>Сервисный центр по ремонту техники Dell CPS</title>
-    <link rel="stylesheet"  href="styles/style.css">
-  </head>
 
-  <body class="body">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="ремонт техники, Dell, CPS">
+  <meta name="description" content="Авторизированный сервисный центр по ремонту техники Dell CPS">
+  <title>Сервисный центр по ремонту техники Dell CPS</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-    <header class="menu menu__indent menu--border">
+<body class="body">
 
-      <div class="menu__column">
+  <header class="menu menu__indent menu--border">
 
-        <button type="button" class="button-circle button-circle--decoration">
-            <img src="img/burger.svg" alt="burger-menu" class="button-circle__img"></img>
-        </button> 
+    <div class="menu__column">
 
-          <img src="img/logo.svg" alt="logotip" class="menu__divider-position"></img>
-        
-      </div>
+      <button type="button" class="button-circle button-circle--decoration">
+        <img src="img/burger.svg" alt="burger-menu" class="button-circle__img"></img>
+      </button>
 
-      <div class="menu__column">
-        
-        <button type="button" class="button-circle button-circle--decoration button-circle--position">
-          <img src="img/phone.svg" alt="phone" class="button-circle__img"></img>
-        </button> 
+      <img src="img/logo.svg" alt="logotip" class="menu__divider--position"></img>
 
-        <button type="button" class="button-circle button-circle--decoration button-circle--position">
-            <svg width="20px" height="20px" class="button-circle__img">
-             <g>
-                <symbol id="icon-message">
-                  <title>message</title>
-                  <desc>White icon  message</desc>   
-                    <rect x="0" y="0"
-                    width="20" height="15"
-                    rx="2" ry="2" fill="#FFFFFF" stroke="#FFFFFF" />
-                    <path fill="#FFFFFF" d="M0 13 L0 20  L4 15 Z"/>
-                    <rect x="4" y="4"
-                    width="12" height="2"
-                    rx="2" ry="2" fill="#FF3E79"/>
-                    <rect x="4" y="9"
-                    width="8" height="2"
-                    rx="2" ry="2" fill="#FF3E79"/>
-                </symbol>
-                <use xlink:href="#icon-message" x="0" y="0"/>
-              </g>
-            </svg>
-        </button>   
+    </div>
 
-        <button type="button" class="button-circle button-circle--decoration button-circle--position">
-            <img src="img/person.svg" alt="contacts" class="button-circle__img"></img>
-        </button> 
+    <div class="menu__column">
 
-        <div class="menu__1120"> 
-        <button type="button" class="button button--grey button-circle--decoration menu__1120--position">
+      <button type="button" class="button-circle button-circle--decoration button-circle--visibility">
+        <img src="img/phone.svg" alt="phone" class="button-circle__img"></img>
+      </button>
+
+      <button type="button" class="button-circle button-circle--decoration button-circle--visibility">
+        <svg width="20px" height="20px" class="button-circle__img">
+          <g>
+            <symbol id="icon-message">
+              <title>message</title>
+              <desc>White icon message</desc>
+              <rect x="0" y="0" width="20" height="15" rx="2" ry="2" fill="#FFFFFF" stroke="#FFFFFF" />
+              <path fill="#FFFFFF" d="M0 13 L0 20  L4 15 Z" />
+              <rect x="4" y="4" width="12" height="2" rx="2" ry="2" fill="#FF3E79" />
+              <rect x="4" y="9" width="8" height="2" rx="2" ry="2" fill="#FF3E79" />
+            </symbol>
+            <use xlink:href="#icon-message" x="0" y="0" />
+          </g>
+        </svg>
+      </button>
+
+      <button type="button" class="button-circle button-circle--decoration button-circle--visibility">
+        <img src="img/person.svg" alt="contacts" class="button-circle__img"></img>
+      </button>
+
+      <div class="menu__1120">
+        <button type="button"
+          class="button button__grey button__grey--position button-circle--decoration menu__1120--visibility">
           <span>Оставить заявку</span>
-        </button> 
+        </button>
 
-        <button type="button" class="button-circle button-circle--decoration menu__divider-position">
-            <img src="img/repair.svg" alt="repair" class="button-circle__img"></img>
-        </button> 
+        <button type="button" class="button-circle button-circle--decoration menu__divider--position">
+          <img src="img/repair.svg" alt="repair" class="button-circle__img"></img>
+        </button>
 
-        <button type="button" class="button button--grey button-circle--decoration menu__1120--position">
-          <span>Статус ремонта</span> 
-        </button> 
+        <button type="button"
+          class="button button__grey button__grey--position button-circle--decoration menu__1120--visibility">
+          <span>Статус ремонта</span>
+        </button>
 
         <button type="button" class="button-circle button-circle--decoration">
-            <img src="img/checkstatus.svg" alt="checkstatus" class="button-circle__img"></img>
-        </button> 
-        </div>
+          <img src="img/checkstatus.svg" alt="checkstatus" class="button-circle__img"></img>
+        </button>
       </div>
+    </div>
 
-    </header>
+  </header>
 
-    <main class="about about__indent">
-      <h1 class="title-menu title-menu__active">Услуги и сервисы</h1>      
-      
-      <nav>
-        <ul  class="about__menu-row">
-          <li><a href="#" class="about__menu-item about__menu-active"> Ремонтируемые устройства</a></li>
-          <li><a href="Mobile menu.html" class="about__menu-item">Дополнительные услуги</a></li>
-          <li><a href="#" class="about__menu-item">Цены на услуги</a></li>
-          <li><a href="#" class="about__menu-item">Специальные цены</a></li>
-          <li><a href="#" class="about__menu-item">Адреса сервисных центров</a></li>
-          <li><a href="#" class="about__menu-item">Отзывы</a></li>
+  <main class="about about__indent">
+    <h1 class="title">Услуги и сервисы</h1>
+
+    <nav>
+      <ul class="about__menu-row">
+        <li><a href="#" class="about__menu-item about__menu--active"> Ремонтируемые устройства</a></li>
+        <li><a href="mobile-menu.html" class="about__menu-item">Дополнительные услуги</a></li>
+        <li><a href="brand-cards.html" class="about__menu-item">Цены на услуги</a></li>
+        <li><a href="#" class="about__menu-item">Специальные цены</a></li>
+        <li><a href="#" class="about__menu-item">Адреса сервисных центров</a></li>
+        <li><a href="#" class="about__menu-item about__menu-item--indent">Отзывы</a></li>
       </ul>
-      </nav>
+    </nav>
 
-      <div class="about__info-row">
-        <div class="about__info-column">
+    <div class="about__info-row">
+      <div class="about__info-column">
 
-          <article class="about__text">
-            <p>Мы являемся авторизованным
-              сервисным центром по ремонту техники Dell.
-              Только у нас вы можете отремонтировать свой 
-              ноутбук Dell с официальной гарантией 
-              производителя.</p>
-            <p>Мы успешно работаем с 1992 года и 
-             заслужили репутацию надежного партнера, что подтверждает большое количество 
-              постоянных клиентов. Мы гордимся тем, что к нам обращаются 
-              по рекомендациям и, в свою очередь, советуют нас родным
-              и близким</p>
-          </article>
+        <article class="about__text">
+          <span>Мы являемся авторизованным
+            сервисным центром по ремонту техники Dell.
+            Только у нас вы можете отремонтировать свой
+            ноутбук Dell с официальной гарантией
+            производителя.</span>
+          <p>Мы успешно работаем с 1992 года и
+            заслужили репутацию надежного партнера, что подтверждает большое количество
+            постоянных клиентов. Мы гордимся тем, что к нам обращаются
+            по рекомендациям и, в свою очередь, советуют нас родным
+            и близким</p>
+        </article>
 
-          <button type="button" class="button button--grey  button-circle--decoration">
-            <svg class="arrow">
-              <g>
-                <symbol id="arrow">
-                  <title>Two arrows down directed</title>
-                  <desc>Two blue arrows down directed</desc>   
-                  <path fill="#F8F8F8" d="M0 0 L3.5 4 L7 0"/>
-                </symbol>
-                <use xlink:href="#arrow" x="0" y="0"/>
-                <use xlink:href="#arrow" x="0" y="6"/>
-              </g>
-            </svg>
-          </button>
-         
-          <button type="button" class="button button--grey button-grey__position button-circle--decoration">
-            Читать далее
-          </button> 
-        </div>
-
-        <img src="img/info-img.jpg" alt="" class="about__info-column about__img"></img>
-        
+        <button type="button"
+          class="button  button__grey button__grey--position button--visibility button-circle--decoration">
+          <svg class="arrow arrow--position">
+            <g>
+              <symbol id="arrow">
+                <title>Two arrows down directed</title>
+                <desc>Two blue arrows down directed</desc>
+                <path fill="#F8F8F8" d="M0 0 L3.5 4 L7 0" />
+              </symbol>
+              <use xlink:href="#arrow" x="10" y="0" />
+              <use xlink:href="#arrow" x="10" y="6" />
+            </g>
+          </svg>
+          Читать далее
+        </button>
       </div>
-    </main>    
-  </body>
+
+      <img src="img/info-img.jpg" alt="" class="about__info-column about__img"></img>
+
+    </div>
+  </main>
+</body>
+
 </html>

@@ -1,0 +1,31 @@
+.title {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  position: relative;
+  font-weight: 900;
+  }
+
+  .title::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #41F6D7;
+    margin: 0px 0px 0px -16px;
+  }
+
+  @media screen and (min-width: 360px) {
+    .title::before {
+      margin: 0px 0px 0px -24px;
+    }
+   }
+  
+  @media screen and (min-width: 1120px) {
+    .title::before {
+      margin: 0px 0px 0px -30px;
+    }
+  }

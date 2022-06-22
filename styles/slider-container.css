@@ -1,0 +1,23 @@
+.slider-container {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-container {
+    padding-left: 24px;
+    max-height: 184px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .slider-container {
+    padding-left: 32px;
+  }
+}
+
+.slider-container--show-all-brands {
+  max-height: 500px;
+  overflow: visible;
+}

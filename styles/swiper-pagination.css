@@ -1,0 +1,14 @@
+.swiper-pagination {
+  bottom: auto;
+  top: 184px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #DDDDDD;
+}
+
+:root {
+  --swiper-theme-color: #B5B6BC;
+}

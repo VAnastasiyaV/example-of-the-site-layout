@@ -1,0 +1,49 @@
+.button {
+  display: block;
+  color: #1B1C21;
+  background-color: #FFFFFF;
+  font-family: TT Lakes;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  border: none;
+  padding: 0;
+}
+
+.button__grey {
+  background-color: #F8F8F8;
+}
+
+.button--indent {
+  margin-right: 7px;
+}
+
+.button--active {
+  color: #949494f2;
+  font-weight: 900;
+}
+
+.button__grey--position {
+  margin-left: 16px;
+}
+
+.button--hidden {
+  display: none;
+}
+
+.button--visibility {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button--visibility {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .button__grey--position {
+    margin-right: 24px;
+  }
+}
