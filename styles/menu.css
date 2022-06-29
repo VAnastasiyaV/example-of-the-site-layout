@@ -12,29 +12,16 @@
   border-bottom: 1px solid #D9FFF5;
 }
 
-.menu__indent {
+.menu--indent {
   padding-left: 16px;
   padding-right: -16px;
 }
 
-@media screen and (min-width: 360px) {
-  .menu__indent {
-    padding-left: 24px;
-    padding-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .menu__indent {
+@media screen and (min-width: 1440px) {
+  .menu--indent {
     padding-left: 30px;
     padding-right: 14px;
   }
-}
-
-.menu__indent-mobile320
-{
-  padding-left: 24px;
-  padding-right: 8px;
 }
 
 .menu__1120 {
@@ -71,6 +58,7 @@
   display: flex;
   padding-right: 16px;
   align-self: center;
+
 }
 
 .menu::before,
@@ -94,20 +82,20 @@
   display: none;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 768px) {
   .menu::after {
-    margin-left: -156px;
+    margin-left: -151px;
   }
 
 @media screen and (min-width: 768px) {
   .menu::before {
     display: block;
-    left: 80px;
+    left: 78px;
     margin-right: 20px;
   }
 
   .menu__divider--position {
-    margin-left: 22px;
+    margin-left: 28px;
   }
 }
 

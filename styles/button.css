@@ -1,5 +1,4 @@
 .button {
-  display: block;
   color: #1B1C21;
   background-color: #FFFFFF;
   font-family: TT Lakes;
@@ -9,14 +8,90 @@
   letter-spacing: -0.2px;
   border: none;
   padding: 0;
+  position: relative;
 }
 
-.button__grey {
+.button:hover {
+  transition: 0.5s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.button--grey {
   background-color: #F8F8F8;
+  margin-left: 16px;
+}
+
+.button--arrow {
+  margin: 10px 0 0 20px;
+}
+
+.button--arrow::before {
+  content: '';
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  right: 100px;
+  bottom: 3px;
+  margin: 0 10px 10px 0;
+  box-sizing: border-box;
+  border-top: 1.5px solid #41F6D7;
+  border-right: 1.5px solid #41F6D7;
+  border-radius: 1px;
+  transform: rotate(135deg);
+}
+
+.button--arrow::after {
+  content: '';
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  right: 100px;
+  bottom: -2px;
+  margin: 0 10px 10px 0;
+  box-sizing: border-box;
+  border-top: 1.5px solid #41F6D7;
+  border-right: 1.5px solid #41F6D7;
+  border-radius: 1px;
+  transform: rotate(135deg);
+}
+
+.button--arrow-up {
+  margin: 10px 0 0 20px;
+}
+
+.button--arrow-up::before {
+  content: '';
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  right: 55px;
+  bottom: 0;
+  margin: 0 10px 10px 0;
+  box-sizing: border-box;
+  border-top: 1.5px solid #41F6D7;
+  border-right: 1.5px solid #41F6D7;
+  border-radius: 1px;
+  transform: rotate(-45deg);
+}
+
+.button--arrow-up::after {
+  content: '';
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  right: 55px;
+  bottom: -5px;
+  margin: 0 10px 10px 0;
+  box-sizing: border-box;
+  border-top: 1.5px solid #41F6D7;
+  border-right: 1.5px solid #41F6D7;
+  border-radius: 1px;
+  transform: rotate(-45deg);
 }
 
 .button--indent {
-  margin-right: 7px;
+  margin: 0px 7px 32px 0;
 }
 
 .button--active {
@@ -24,12 +99,11 @@
   font-weight: 900;
 }
 
-.button__grey--position {
-  margin-left: 16px;
-}
-
-.button--hidden {
-  display: none;
+.button--bold {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
 }
 
 .button--visibility {
@@ -40,10 +114,14 @@
   .button--visibility {
     display: block;
   }
+
+  .button--indent {
+    margin: 32px 7px 40px 0;
+  }
 }
 
 @media screen and (min-width: 1120px) {
-  .button__grey--position {
-    margin-right: 24px;
+  .button--grey {
+    margin-right: 8px;
   }
 }

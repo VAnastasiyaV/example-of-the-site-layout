@@ -23,6 +23,13 @@
   font-weight: bold;
 }
 
+.button-circle--decoration:active {
+  transition: 0.1s;
+  transform: scale(1);
+  color:black;
+  font-weight: bold;
+}
+
 .button-circle--visibility {
   display: none;
 }

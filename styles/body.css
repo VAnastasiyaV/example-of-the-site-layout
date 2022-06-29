@@ -12,8 +12,10 @@
   box-sizing: border-box;
 }
 
-.body__mobile320 {
+.body--mobile320 {
   width: 320px;
+  padding-left: 24px;
+  padding-right: 8px;
   font-size: 16px;
   line-height: 24px;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -21,5 +23,10 @@
 
 .body--grey {
   background-color: #F8F8F8;
+}
 
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .body--mobile320 {
+    width: 360px;
+  }
 }
