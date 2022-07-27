@@ -1,0 +1,136 @@
+.header {
+   position: relative;
+   height: 87px;
+   width: auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -o-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+
+   @media screen and (min-width: $screen-xl) {
+      visibility: hidden;
+      margin-bottom: -88px;
+   }
+
+   &::before,
+   &::after {
+      @include psevdo-el(32px, 2px);
+      background-color: $grey-lighter;
+      border-radius: 1px;
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+
+      @media screen and (min-width: $screen-xl) {
+         display: none;
+       }
+   }
+ 
+   &::after {
+      left: 100%; 
+      margin-left: -148px;
+
+      @media screen and (min-width: $screen-md) {
+         margin-left: -144px;
+      }
+   }
+ 
+   &::before {
+      display: none;
+
+      @media screen and (min-width: $screen-md) {
+         display: block;
+         left: 78px;
+      }   
+   }
+
+   &__column {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 16px;
+      -ms-flex-item-align: center;
+          align-self: center;
+
+      &--aside {
+         position: absolute;
+         right: 0;
+         margin-right: -240px;
+         visibility: hidden;
+
+         @media screen and (min-width: $screen-md) {
+            margin-right: 140px;
+            visibility: visible;
+         }
+
+         @media screen and (min-width: $screen-xl) {
+            visibility: visible;
+            position: absolute;
+            left: 0;
+            top: 810px;
+            margin-left: -282px;
+            z-index: 10;
+         }
+      }
+   }
+
+   &__1440 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+
+      @media screen and (min-width: $screen-xl) {
+         visibility: visible;
+         position: absolute;
+         left: 100%;
+         bottom: 8px;
+         margin-left: -430px;
+         z-index: 10;
+      }
+
+      &--visibility {
+         display: none;
+     
+         @media screen and (min-width: $screen-xl) {
+            display: inline;
+         }
+      }
+   }
+   
+   // &__aside {
+   // visibility: visible;
+   // margin: 13px 5px 0 0;
+   // }
+
+   &--border {
+      border-bottom: 1px solid $border-color;
+   }
+    
+   &--indent {
+      padding-left: 16px;
+      padding-right: -16px;
+      
+      @media screen and (min-width: $screen-xl) {
+        padding-left: 30px;
+        padding-right: 32px;
+      }
+   }
+
+   &__divider {
+      @media screen and (min-width: $screen-md) {
+         margin-left: 28px;
+      }
+     
+      @media screen and (min-width: $screen-xl) {
+        margin-left: 0;
+      }
+   } 
+}

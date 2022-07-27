@@ -1,0 +1,19 @@
+.body {
+   @include font(normal, $font-size, $line-height--table, normal);
+   @include sizes-border-color(auto, auto, none, none, $text-color, $color-secondary);
+   font-family: $font-family;
+   font-style: normal;
+   -o-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+
+   &--grey {
+      background-color: $color-main;
+   }
+   
+   &__indent1440 {
+      @media screen and (min-width: $screen-xl) {
+         margin-left: 306px;
+      }
+   }
+}

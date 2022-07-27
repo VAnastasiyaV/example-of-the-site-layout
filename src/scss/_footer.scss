@@ -1,0 +1,41 @@
+.footer {
+   width: 100%;
+   border-top: 1px solid $border-color;
+   line-height: 16px;
+   text-align: center;
+   color: $text-color--muted;
+   opacity: 0.72;
+   padding: 0 16px 19px 16px;
+
+   @media screen and (min-width: $screen-md) {
+      padding: 16px 24px 40px 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; 
+   }
+
+   &__column {
+      min-width: 253px;
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      &--text-right {
+         @media screen and (min-width: $screen-md) {
+            text-align: right;
+         }
+
+         @media screen and (min-width: $screen-xl) {
+            padding-right: 14px;
+         }
+      }
+   }
+   
+   &--grey {
+      background-color: $color-main;
+   }
+}

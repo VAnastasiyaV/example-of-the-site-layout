@@ -1,0 +1,136 @@
+.button {
+   color: $text-color;
+   background-color: $color-secondary;
+   @include font($font-weight--bold, $font-size--link, $line-height--btn, -0.2px);
+   font-family: $font-family;
+   border: none;
+   padding: 0;
+   position: relative;
+   text-align: left;
+
+   &:hover {
+      @extend %btn-hover;
+   }
+
+   &:focus {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      color: $grey-darknest;
+      font-weight: $font-weight--bold;
+   }
+      
+   &:active {
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      -webkit-transform: scale(1);
+         -ms-transform: scale(1);
+             transform: scale(1);
+      color: $text-color;
+      font-weight: $font-weight--bold;
+   }
+
+   &__red-arrow {
+      padding: 0 15px 0 0;
+      margin: 0 20px 0 0;  
+      position: relative;
+   
+      &:before {
+         @include psevdo-el(8px, 8px);
+         @include button--arrow(2px solid $btn-color, 45deg);
+         left: 110px;
+         bottom: 7.5px;
+         margin: 0;
+      
+         @media screen and (min-width: 343px) {
+            left: 298px; 
+         }  
+      }
+   }
+
+   &--grey {
+      background-color: $color-main;
+      margin-left: 16px;
+
+      @media screen and (min-width: $screen-lg) {
+         margin-right: 8px;
+      }
+   }
+    
+    &--arrow {
+      margin: 10px 0 0 20px;
+
+      &:before,
+      &:after {
+         @include psevdo-el(6px, 6px);
+         @include button--arrow(1.5px solid $color-success, 135deg);
+         right: 100px;
+         bottom: 3px;
+         margin: 0 10px 10px 0;
+       }
+       
+      &:after {
+         right: 100px;
+         bottom: -2px;
+      }
+   }
+   &--arrow-up {
+      margin: 10px 0 0 20px;
+    
+      &:before,
+      &:after {
+      @include psevdo-el(6px, 6px);
+      @include button--arrow(1.5px solid $color-success, -45deg);
+      right: 55px;
+      bottom: 0;
+      margin: 0 10px 10px 0;
+      }
+    
+      &:after {
+         bottom: -5px;
+         margin: 0 10px 10px 0;
+      }
+   }
+
+   &--indent {
+      margin: 0px 7px 32px 0;
+
+      @media screen and (min-width: $screen-md) {
+         margin: 32px 7px 40px 0;
+      }
+   }
+    
+   &--active {
+      color: $text-color--muted;
+      font-weight: $font-weight--boldest;
+    }
+    
+   &--bold {
+      @include font($font-weight--boldest, $font-size--h1, $line-height--h1, -0.6px);
+   }
+    
+   &--visibility {
+      display: none;
+    
+      @media screen and (min-width: $screen-md) {
+         display: block;
+      }
+   }
+    
+   &--indent {
+      margin: 32px 7px 40px 0;
+   }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

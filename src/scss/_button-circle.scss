@@ -1,0 +1,101 @@
+.button-circle {
+   @include sizes-border-color(40px, 40px, none, 100%, inherit, $btn-color);
+   margin-right: 16px;
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-item-align: center;
+       align-self: center;
+   
+   &:hover {
+      @extend %btn-hover;
+   }
+       
+   &:focus {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      -webkit-transform: scale(1.1);
+         -ms-transform: scale(1.1);
+            transform: scale(1.1);
+      color: $grey-darknest;
+      font-weight: $font-weight--bold;
+   }
+      
+   &:active {
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      -webkit-transform: scale(1);
+         -ms-transform: scale(1);
+             transform: scale(1);
+      color: $text-color;
+      font-weight: $font-weight--bold;
+   }
+      
+   &__img {
+      margin: auto;
+   }
+
+   &__close { 
+      @include sizes-border-color(40px, 40px, none, 100%, inherit, none);
+      margin: -1px -6px 0 -6px;
+   
+      &:before,
+      &:after {
+         @include psevdo-el(10.87px, 10.87px);
+         position: absolute;
+         -ms-flex-item-align: center;
+           align-self: center;
+         border-top: 2.17px solid $color-secondary;
+         border-left: 2.17px solid $color-secondary;
+         left: 20px;
+      }
+   
+      &:before {
+         top: 21.09px;
+         -webkit-transform-origin: 0% 0%;
+            -ms-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+         -webkit-transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+      }
+   
+      &:after {
+         top: 18.91px;
+         -webkit-transform-origin: 0% 0%;
+             -ms-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+         -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+   }
+   
+   &--visibility {
+      display: none;
+    
+      @media screen and (min-width: $screen-md) {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+      }
+   }
+
+   &--display-none1440 {
+      @media screen and (min-width: $screen-xl) {
+         display: none;
+      }
+   }
+
+   &--modal-window {
+      @media screen and (min-width: 880px) {
+         position: absolute;
+         right: 0;
+         top: 0;
+         margin: 32px 472px 0 0;
+      }
+   }
+}

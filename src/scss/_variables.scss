@@ -1,0 +1,50 @@
+$grey-lighten: #F8F8F8;
+$grey-lighter: #EAEAEA;
+$grey-light: #DDDDDD;
+$grey: #b5b6bc;
+$grey-dark: #7E7E82;
+$grey-darknest: #757474;
+$blue-lighten: #D9FFF5;
+$blue-light: #B8FFEC;
+$blue: #41F6D7;
+$btn-color: #FF3E79;
+$color-success: $blue;
+$border-color: $blue-lighten;
+$change-color:$blue-light;
+$color-main: $grey-lighten;
+$color-secondary:#ffffff;
+$text-color: #1B1C21;
+$text-color--muted: $grey-dark;
+ 
+$font-size: 1rem;
+$font-size--link: 16px/14px*1rem;
+$font-size--h1: 24px/14px*1rem;
+$font-size--title: 28px/14px*1rem;
+$font-size--small: 12px/14px*1rem;
+ 
+$font-weight: normal;
+$font-weight--bold: bold;
+$font-weight--boldest: 900;
+
+$line-height: 24px/14px*1rem;
+$line-height--small: 16px/14px*1rem;
+$line-height--table: 18px/14px*1rem;
+$line-height--text: 20px/14px*1rem;
+$line-height--btn: 24px/14px*1rem;
+$line-height--h1: 32px/14px*1rem;
+$line-height--title: 40px/14px*1rem;
+ 
+$font-family: "TT Lakes", "Arial", sans-serif;
+ 
+$screen-xs:360;
+$screen-md: 768px;
+$screen-lg: 1120px;
+$screen-xl: 1440px;
+
+%btn-hover{
+   -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+   opacity: 0.7;
+   cursor: pointer;
+}

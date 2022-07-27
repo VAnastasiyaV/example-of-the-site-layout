@@ -1,0 +1,179 @@
+.pop-up {
+   position: absolute;
+   z-index: 2;
+   background-color: rgba(255, 255, 255, .96);
+   width: 100vw;
+   height: auto;
+   display: none;
+
+   @media screen and (min-width: $screen-xs) and (max-width: $screen-md) {
+      background-color: rgba(255, 255, 255, 1);
+   }
+
+   @media screen and (min-width: $screen-xl) {
+      display: inline;
+      width: 306px;
+      height: 753px;
+   } 
+   
+   &__menu {
+      padding-left: 16px;
+      font-size: $font-size--link;
+      line-height: $line-height--btn;
+      width: 320px;
+      display: none;
+      -webkit-box-sizing:border-box;
+              box-sizing:border-box;
+      background-color: $color-secondary;
+
+      @media screen and (min-width: $screen-xs){
+         width: 360px;
+         padding-left: 24px;
+      }
+
+      @media screen and (min-width: $screen-md) {
+         padding-left: 24px;
+         width: 320px;
+         -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+                 box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+      }
+
+      @media screen and (min-width: $screen-xl) {
+         -webkit-box-shadow: none;
+         box-shadow: none;
+         height: auto;
+         width: 306px;
+         position: absolute;
+         display: inline;
+         opacity: 1;   
+      }
+
+      --visible {
+         display: none;
+
+         @media screen and (min-width: $screen-xl) {
+            display: inline;
+         }   
+      }
+   } 
+
+   &__footer-buttons {
+      visibility: visible;
+      position: absolute;
+      left: 0;
+      top: 520px;
+      margin-right: 0;
+      margin-left: 16px;
+      z-index: 12;
+
+      @media screen and (min-width: $screen-xs) {
+         margin-left: 24px;
+      }
+
+      @media screen and (min-width: $screen-md) {
+         margin-left: 24px;
+         top: 810px;
+      }      
+
+      @media screen and (min-width: $screen-xl) {
+         margin-left: -282px;
+         top: 810px;
+      }    
+   }
+
+   &__header {
+      position: relative;
+      height: 87px;
+      width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+            justify-content: space-between;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+      @media screen and (min-width: $screen-xl) {
+         padding-top: 30px;
+      }
+
+   }
+
+   &__list {
+      position: relative;
+      padding: 15px 0 0 0;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 460px;
+      border-top: 1px solid $color-secondary;
+
+      @media screen and (min-width: $screen-md) {
+         height: 750px;
+         margin-top: 15px;
+      }
+
+      @media screen and (min-width: $screen-xl) {
+         height: 753px;
+      } 
+     
+   }
+
+   &__item {
+      margin-bottom: 24px;
+      list-style-type: none;
+
+      @media screen and (min-width: $screen-md) {
+         margin-bottom: 32px;
+      }
+      
+      &:hover {
+         @extend %btn-hover;
+      }
+       
+      &:focus {
+         -webkit-transition: 0.2s;
+         -o-transition: 0.2s;
+         transition: 0.2s;
+         -webkit-transform: scale(1.2);
+             -ms-transform: scale(1.2);
+                 transform: scale(1.2);
+         color: $grey-darknest;
+         font-weight: $font-weight--bold;
+      }
+
+      &--active {
+         color: $text-color--muted;
+
+         &::before {
+            @include psevdo-el(32px, 4px);
+            position: absolute;
+            left: 0px;
+            top: -4px;
+            border-radius: 0px 6px 6px 0px;
+            background-color: $color-success;
+            margin: 0px 0px 0px -24px;
+         }            
+      }     
+   }
+
+   &__link {
+      font-style: normal; 
+      text-decoration: none;
+      color: $text-color;
+      position: relative;
+   }
+    
+   &__lang {
+      width: 86px;
+      margin-top: 40px;
+   }
+   
+   &--display-none1440 {
+      @media screen and (min-width: $screen-xl) {
+         display: none;
+      }
+   }   
+}
