@@ -67,6 +67,7 @@ module.exports = {
       // Подключаем файл html, стили и скрипты встроятся автоматически
       new HtmlWebpackPlugin({
          template: './src/index.html',
+         filename: '../index.html',
          inject: true,
          minify: {
             removeComments: true,
