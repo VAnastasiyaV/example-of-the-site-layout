@@ -462,12 +462,13 @@ template {
       margin: 0; }
       @media screen and (min-width: 343px) {
         .button__red-arrow:before {
-          left: 298px; } }
+          left: 302px; } }
   .button--grey {
-    background-color: #F8F8F8;
+    background-color: #F8F8F8; }
+  .button--margin-left {
     margin-left: 16px; }
     @media screen and (min-width: 1120px) {
-      .button--grey {
+      .button--margin-left {
         margin-right: 8px; } }
   .button--arrow {
     margin: 10px 0 0 20px; }
@@ -512,7 +513,7 @@ template {
       bottom: -5px;
       margin: 0 10px 10px 0; }
   .button--indent {
-    margin: 0px 7px 32px 0; }
+    margin: 32px 7px 40px 0; }
     @media screen and (min-width: 768px) {
       .button--indent {
         margin: 32px 7px 40px 0; } }
@@ -529,8 +530,6 @@ template {
     @media screen and (min-width: 768px) {
       .button--visibility {
         display: block; } }
-  .button--indent {
-    margin: 32px 7px 40px 0; }
 
 .header {
   position: relative;

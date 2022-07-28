@@ -44,13 +44,16 @@
          margin: 0;
       
          @media screen and (min-width: 343px) {
-            left: 298px; 
+            left: 302px; 
          }  
       }
    }
 
    &--grey {
       background-color: $color-main;
+   }
+
+   &--margin-left {
       margin-left: 16px;
 
       @media screen and (min-width: $screen-lg) {
@@ -58,7 +61,7 @@
       }
    }
     
-    &--arrow {
+   &--arrow {
       margin: 10px 0 0 20px;
 
       &:before,
@@ -75,6 +78,7 @@
          bottom: -2px;
       }
    }
+   
    &--arrow-up {
       margin: 10px 0 0 20px;
     
@@ -94,7 +98,7 @@
    }
 
    &--indent {
-      margin: 0px 7px 32px 0;
+      margin: 32px 7px 40px 0;
 
       @media screen and (min-width: $screen-md) {
          margin: 32px 7px 40px 0;
@@ -116,10 +120,6 @@
       @media screen and (min-width: $screen-md) {
          display: block;
       }
-   }
-    
-   &--indent {
-      margin: 32px 7px 40px 0;
    }
 }
  
