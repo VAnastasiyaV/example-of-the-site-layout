@@ -1,0 +1,75 @@
+.cards-equipment {
+   width: 240px;
+   list-style-type: none;
+
+   @media screen and (min-width: $screen-md) {
+      width: auto;
+   }
+
+   &__link {
+      @include font(inherit, $font-size--link, $line-height--btn, -0.2px);
+      @include sizes-border-color(72px, 240px, 1px solid $color-secondary, 6px, $text-color, $color-secondary);
+      height: 160px;   
+      padding-top: 16px;
+      font-style: normal; 
+      text-decoration: none;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding-left: 16px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: flex-start;
+         -ms-flex-align: flex-start;
+            align-items:flex-start;
+
+      @media screen and (min-width: $screen-md) {
+         margin-right: 24px;
+         margin-bottom: 16px;
+      }
+      
+      @media screen and (min-width: $screen-lg) {
+         margin-right: 32px;
+      }
+      
+      @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+         width: 224px;
+      }
+            
+      &:hover {
+         @extend %btn-hover;
+      }
+
+      &:focus {
+         -webkit-transition: 0.2s;
+         -o-transition: 0.2s;
+         transition: 0.2s;
+         color: $grey-darknest;
+         font-weight: $font-weight--bold;
+      }
+
+      &:after {
+         @include psevdo-el(40px, 40px);
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         margin: 0 16px 16px 0;
+         -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+         border: 2px solid $btn-color;
+         border-radius: 20px;
+      }
+      
+      &:before {
+         @include psevdo-el(8px, 8px);
+         @include button--arrow(2px solid $btn-color, 45deg);
+         right: 0;
+         bottom: 0;
+         margin: 0 32.5px 32px 0;
+      }
+   }
+}

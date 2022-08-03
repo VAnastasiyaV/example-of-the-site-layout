@@ -6,6 +6,7 @@
    color: $text-color--muted;
    opacity: 0.72;
    padding: 0 16px 19px 16px;
+   box-sizing: border-box;
 
    @media screen and (min-width: $screen-md) {
       padding: 16px 24px 40px 24px;
@@ -18,19 +19,30 @@
       justify-content: space-between; 
    }
 
+   @media screen and (min-width: $screen-xl) {
+      padding: 16px 32px 40px 32px;
+   }
+
    &__column {
-      min-width: 253px;
+      min-width: 238px;
       max-width: 330px;
       margin-left: auto;
       margin-right: auto;
+      box-sizing: border-box;
+
+      @media screen and (min-width: $screen-md) {
+         margin: 0;
+      }
       
       &--text-right {
          @media screen and (min-width: $screen-md) {
             text-align: right;
          }
+      }
 
-         @media screen and (min-width: $screen-xl) {
-            padding-right: 14px;
+      &--text-center {
+         @media screen and (min-width: $screen-md) {
+            text-align: center;
          }
       }
    }

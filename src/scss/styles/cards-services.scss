@@ -1,0 +1,84 @@
+.cards-services {
+   width: 260px;
+   height: 200px;
+   list-style-type: none;
+   box-sizing: border-box;   
+
+   @media screen and (min-width: $screen-md) {
+      height: 64px;
+      width: 100%;
+      display: block;
+      padding: 0;
+   }
+
+   &__item {
+      
+      @include font(inherit, $font-size, $line-height--table, 0.2px);
+      @include sizes-border-color(200px, 260px, 1px solid $color-secondary, 6px, inherit, $color-secondary);
+      font-style: normal;
+      padding: 0 0 0 16px; 
+      box-sizing: border-box;
+
+      @media screen and (min-width: $screen-md) {
+         height: 64px;
+         width: 100%;
+         margin: 0;
+         padding: 0 0 0 16px; 
+         display: grid;
+         grid-template-columns: 51% 16% 14% 19%;
+         align-items: center;
+         border-bottom: 1px solid $grey-lighter;
+
+      }
+   }
+
+   &__item-h {
+      padding-top: 16px;
+      line-height: $line-height--small;
+      color: $text-color--muted;
+      opacity: 0.72;
+      padding-bottom: 4px;
+
+      &--visible {
+
+         @media screen and (min-width: $screen-md) {
+            display: none;
+         }
+      }
+
+      &--position-left0 {
+
+         @media screen and (min-width: $screen-md) {
+            position: absolute;
+            top: 0;
+            margin-top: -42px;
+         }
+      }
+
+      &--position-left396 {
+
+         @media screen and (min-width: $screen-md) {
+            position: absolute;
+            top: 0;
+            margin-top: -42px;
+            margin-left: 396px;
+         }
+      }
+
+      &--position-left522 {
+
+         @media screen and (min-width: $screen-md) {
+            position: absolute;
+            top: 0;
+            margin-top: -42px;
+            margin-left: 522px;
+         }
+      }
+   }
+
+   &__text {
+      max-width: 421px;
+   }
+
+}
+

@@ -1,0 +1,73 @@
+.navigation {
+   background-color: $color-secondary;
+
+   &__list {
+      position: relative;
+      padding: 15px 0 0 0;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 460px;
+      border-top: 1px solid $color-secondary;
+
+      @media screen and (min-width: $screen-md) {
+         height: 750px;
+         margin-top: 15px;
+      }
+
+      @media screen and (min-width: $screen-xl) {
+         height: 753px;
+      } 
+     
+   }
+
+   &__item {
+      margin-bottom: 24px;
+      list-style-type: none;
+
+      @media screen and (min-width: $screen-md) {
+         margin-bottom: 32px;
+      }
+      
+      &:hover {
+         @extend %btn-hover;
+      }
+       
+      &:focus {
+         -webkit-transition: 0.2s;
+         -o-transition: 0.2s;
+         transition: 0.2s;
+         -webkit-transform: scale(1.2);
+             -ms-transform: scale(1.2);
+                 transform: scale(1.2);
+         color: $grey-darknest;
+         font-weight: $font-weight--bold;
+      }
+
+      &--active {
+         color: $text-color--muted;
+
+         &::before {
+            @include psevdo-el(32px, 4px);
+            position: absolute;
+            left: 0px;
+            top: -4px;
+            border-radius: 0px 6px 6px 0px;
+            background-color: $color-success;
+            margin: 0px 0px 0px -16px;
+
+            @media screen and (min-width: $screen-xs) {
+               margin: 0px 0px 0px -24px;
+            }        
+         }  
+      }     
+   }
+
+   &__link {
+      font-style: normal; 
+      text-decoration: none;
+      color: $text-color;
+      position: relative;
+   }
+    
+}

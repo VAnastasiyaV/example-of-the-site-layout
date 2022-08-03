@@ -12,8 +12,15 @@
    }
    
    &__indent1440 {
+
       @media screen and (min-width: $screen-xl) {
          margin-left: 306px;
       }
+   }
+
+   &--pop-up{
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
    }
 }

@@ -1,0 +1,56 @@
+.button-logo {
+   background-color: $color-secondary;
+   border: none;
+   padding: 0;
+   position: relative;
+
+   &:hover {
+      @extend %btn-hover;
+   }
+
+   &:focus {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      color: $grey-darknest;
+      font-weight: $font-weight--bold;
+   }
+      
+   &:active {
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      -webkit-transform: scale(1);
+         -ms-transform: scale(1);
+             transform: scale(1);
+      color: $text-color;
+      font-weight: $font-weight--bold;
+   }
+
+   &--aside {
+
+      @media screen and (min-width: $screen-xl) {
+         visibility: visible;
+         position: absolute;
+         left: 0;
+         margin: 10px 0 0 -282px;
+         z-index: 4;
+      }
+   }
+
+   &--pop-up {
+      visibility: visible;
+      position: absolute;
+      left: 0;
+      margin: -8px 0 0 79px;
+      z-index: 4;
+
+      @media screen and (min-width: $screen-xs) {
+         margin: -8px 0 0 84px;
+      }
+
+      @media screen and (min-width: $screen-md) {
+         margin: -8px 0 0 79px;
+      }
+   }
+}

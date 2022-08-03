@@ -1,0 +1,147 @@
+.cards {
+   padding-bottom: 50px;
+   padding-left: 16px;
+   position: relative;
+   box-sizing: border-box;
+ 
+   @media screen and (min-width: $screen-md) {
+      padding-left: 24px;
+      padding-bottom: 32px;
+   }
+ 
+   @media screen and (min-width: $screen-lg) {
+      padding-left: 32px;
+   }
+
+   &__header {
+      @include sizes-border-color(80px, auto, none, none, $text-color--muted, linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%));
+      background: -o-linear-gradient(left, #F8F8F8 0%, #FFFFFF 98.61%);
+      background: -webkit-gradient(linear, left top, right top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
+      border-top: 1px solid $border-color;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-left: -16px;
+      padding-left: 16px;
+
+      @media screen and (min-width: $screen-md) {
+         height: 56px;
+         margin-left: -24px;
+         padding-left: 24px;
+     }
+   }
+    
+   &__h1 {
+      @include font(inherit, $font-size--link, $line-height--btn, -0.2px);
+      font-family: $font-family;
+      text-transform: uppercase;
+   }
+
+   &__container {
+      width: 100%;
+      position: relative;
+
+      @media screen and (min-width: $screen-md) {
+         max-height: 184px;
+         position: relative;
+         overflow: hidden;
+      }
+      
+      @media screen and (min-width: $screen-lg) {
+         margin-bottom: 16px;
+         margin-left: -32px;
+         padding-left: 32px;
+      }
+   
+      &--show-all {
+         max-height: 500px;
+      }
+
+      &--table {
+         @media screen and (min-width: $screen-md) {
+            max-height: 388px;
+            margin-right: 24px;
+         }
+
+         @media screen and (min-width: $screen-lg) {
+            margin-right: 32px;
+         }
+
+         &:before,
+         &:after {
+            @media screen and (min-width: $screen-md) {
+               @include psevdo-el(290px, 16px);
+               position: absolute;
+               background-color: $color-secondary;
+               z-index: 2;
+               bottom: 10px;      
+            }
+         }
+         
+         &:after {
+            @media screen and (min-width: $screen-md) {
+               content: '';
+               right: 0;
+            }
+         }
+      }
+   }
+
+   &__list {
+      margin: 0;
+      padding: 16px 0 0 0;
+      box-sizing: border-box;
+   
+      @media screen and (min-width: $screen-md) {
+         padding: 24px 0 0 0;
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+         column-gap: 0px;
+         row-gap: 0px;
+      }
+   
+      &--indent {
+         margin-bottom: 50px;
+   
+         @media screen and (min-width: $screen-md) {
+             margin-top: 40px;
+           } 
+            
+      } 
+   }
+
+   &__price-list {
+         margin: 0;
+         padding: 0;
+         padding-top: 16px;
+       
+         @media screen and (min-width: $screen-md) {
+            padding-top: 24px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack:justify;
+                -ms-flex-pack:justify;
+                    justify-content:space-between;
+         }
+
+      &--indent {
+         margin-bottom: 50px;
+
+         @media screen and (min-width: $screen-md) {
+            margin-top: 40px;
+         }
+      }         
+
+   }
+
+   
+}

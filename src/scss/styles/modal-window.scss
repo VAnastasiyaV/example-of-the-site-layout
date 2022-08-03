@@ -22,8 +22,8 @@
          float: right;
          padding: 24px 32px 0 32px;
          width: 440px;
-         height: 100vh;
-         min-height: 1050px;
+         height: auto;
+         min-height: 100vh;
          -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 
          16px 0px 52px rgba(14, 24, 80, 0.2);
                  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 
@@ -68,6 +68,10 @@
       padding-left: 16px;
       border: 1px solid $grey-lighter;
       border-radius: 8px;
+
+      &:focus {
+         border: 2px solid $color-success;
+      }
    }
    
    &__textarea {

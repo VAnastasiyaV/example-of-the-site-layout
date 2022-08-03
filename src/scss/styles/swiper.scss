@@ -1,0 +1,17 @@
+.swiper-pagination {
+   position: absolute;
+   bottom: 0;
+   margin-bottom: -45px;
+}
+ 
+.swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: $grey-light;
+}
+ 
+:root {
+   --swiper-theme-color: $grey;
+      overflow-y: auto;
+      overflow-x: hidden;
+}

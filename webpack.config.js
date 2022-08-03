@@ -10,7 +10,7 @@ module.exports = {
    // Выходной файл
    output: {
       //path: path.resolve(__dirname, 'dist'),
-      filename: './js/bundle.js',
+      filename: './dist/js/bundle.js',
    },
 
    // Source maps для удобства отладки
@@ -44,12 +44,9 @@ module.exports = {
 
          // Подключаем шрифты из css
          {
-            test: /\.(eot|ttf|woff|woff2)$/,
-            use: [
-               {
-                  loader: 'file-loader?name=./fonts/[name].[ext]',
-               },
-            ],
+            test: /\.(eot|ttf|woff|woff2)$/i,
+            type: 'asset/resource',
+            dependency: { not: ['url'] },
          },
 
          // Подключаем картинки из css

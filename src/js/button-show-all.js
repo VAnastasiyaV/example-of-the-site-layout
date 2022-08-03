@@ -1,5 +1,5 @@
 export let allContents = [
-   document.querySelector('.about__text'),
+   document.querySelector('.info__text'),
    document.querySelector('#cards-brand'),
    document.querySelector('#card-equipment'),
 ];
@@ -10,17 +10,17 @@ export let showAllButtons = [
    document.getElementById('button-equipment'),
 ];
 
-export let addButtonClickHandler = function (showAllButton, allContent) {
-   showAllButton.addEventListener('click', function pressShowAllButton() {
+let showAllButtonClickHandler = function (showAllButton, allContent) {
+   showAllButton.addEventListener('click', function ShowAllContentButton() {
       if (showAllButton.classList.contains('button--arrow')) {
-         allContent.classList.add('cards__slider-container--show-all');
-         showAllButton.classList.remove('button--arrow');
+         allContent.classList.toggle('cards__container--show-all');
+         showAllButton.classList.toggle('button--arrow');
          showAllButton.textContent = 'Скрыть';
-         showAllButton.classList.add('button--arrow-up');
+         showAllButton.classList.toggle('button--arrow-up');
       } else {
-         allContent.classList.remove('cards__slider-container--show-all');
-         showAllButton.classList.remove('button--arrow-up');
-         showAllButton.classList.add('button--arrow');
+         allContent.classList.toggle('cards__container--show-all');
+         showAllButton.classList.toggle('button--arrow-up');
+         showAllButton.classList.toggle('button--arrow');
          if (allContent == document.querySelector('.about__text')) {
             showAllButton.textContent = 'Читать далее';
          } else {
@@ -29,6 +29,12 @@ export let addButtonClickHandler = function (showAllButton, allContent) {
       }
    });
    showAllButton.addEventListener('keyup', (event) => {
-      if (event.code === 'Enter') pressShowAllButton();
+      if (event.code === 'Enter') ShowAllContentButton();
    });
+};
+
+export let pressShowAllButton = function (allCont, showAllBut) {
+   for (let i = 0; i < allCont.length; i++) {
+      showAllButtonClickHandler(showAllBut[i], allCont[i]);
+   }
 };
