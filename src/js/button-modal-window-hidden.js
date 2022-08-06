@@ -2,6 +2,7 @@ import {
    buttonsMenuFooter,
    buttonMenuLogo,
    bodyBlur,
+   popUpBlur,
 } from './/button-modal-window-show.js';
 
 let hiddenPopUp = function (modalWindow, modalWindowAside) {
@@ -17,13 +18,13 @@ let hiddenModalWindow = function (modalWindow, modalWindowAside) {
    modalWindow.style.display = 'none';
    modalWindowAside.style.display = 'none';
    bodyBlur.classList.remove('body--pop-up');
+   popUpBlur.classList.remove('body--pop-up');
 };
 
 let hiddenModalButtonClickHandler = function (modalWindow, modalWindowAside) {
    modalWindow.addEventListener(
       'click',
       function pressHiddenModalButton(event) {
-         console.log(event.target);
          let targetParent = event.target.parentNode;
 
          if (

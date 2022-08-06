@@ -25,6 +25,7 @@ for (let i = 0; i < modalWindowsAside.length; i++) {
 export let buttonsMenuFooter = document.querySelector('.header__column--aside');
 export let buttonMenuLogo = document.querySelector('.button-logo');
 export let bodyBlur = document.querySelector('.body__indent1440');
+export let popUpBlur = document.querySelector('aside');
 
 let showModalButtonClickHandler = function (
    showModalButton,
@@ -40,6 +41,7 @@ let showModalButtonClickHandler = function (
       modalWindow.style.display = 'block';
       modalWindowAside.style.display = 'block';
       if (modalWindow.classList.contains('modal-window')) {
+         popUpBlur.classList.add('body--pop-up');
          let inputAutof = modalWindow.querySelector('input');
          inputAutof.focus();
       }
